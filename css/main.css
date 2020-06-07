@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #ccc;
 }
 
 img {
@@ -11,6 +12,7 @@ img {
 .gallery {
   max-width: 2100px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .gallery__main-img-container {
@@ -35,6 +37,12 @@ img {
 .gallery__thumbnails-container img {
   cursor: pointer;
   transition: transform 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+@media screen and (min-width: 2100px) {
+  .gallery__thumbnails-container {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 501px) {
